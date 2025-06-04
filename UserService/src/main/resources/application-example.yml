@@ -16,5 +16,11 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: true
+
+  rabbitmq:
+    addresses: amqps://jaragua.lmq.cloudamqp.com
+    username: seu_usuario
+    password: sua_senha
+    virtual-host: seu_virtual_host
 server:
   port: 8080
