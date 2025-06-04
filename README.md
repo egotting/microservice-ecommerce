@@ -1,18 +1,31 @@
-
 # backend-ecommerce
 
-**Este é um projeto inicial de um e-commerce simples, desenvolvido para fins estudantis, focado na venda de teclados e componentes para teclados.**
+**Projeto de e-commerce desenvolvido para fins didáticos, com foco na venda de teclados e componentes para teclados.
+Utiliza arquitetura Hexagonal, DDD e microservices que se comunicam via RabbitMQ.**
 
 ## Tecnologias Utilizadas
-   
+
 - Java
 - Spring Boot
 - Maven
 - PostgreSQL
+- RabbitMQ
+
+## Arquitetura
+
+O projeto segue a arquitetura Hexagonal (Ports & Adapters) e os princípios do DDD (Domain-Driven Design), promovendo
+separação de responsabilidades, testabilidade e flexibilidade. Os microservices se comunicam de forma assíncrona
+utilizando RabbitMQ.
 
 ## Objetivo
 
-O objetivo deste projeto é proporcionar um ambiente de aprendizado prático sobre desenvolvimento de APIs RESTful, autenticação JWT, integração com banco de dados relacional e boas práticas de desenvolvimento backend.
+Proporcionar um ambiente de aprendizado prático sobre:
+
+- Desenvolvimento de APIs RESTful
+- Autenticação JWT
+- Integração com banco de dados relacional
+- Comunicação assíncrona entre microservices (RabbitMQ)
+- Boas práticas de desenvolvimento backend
 
 ## Como executar
 
@@ -20,8 +33,11 @@ O objetivo deste projeto é proporcionar um ambiente de aprendizado prático sob
 2. **Gere as chaves JWT**  
    Siga as instruções em `src/main/resources/keys/generate-ur-keys.md` para gerar as chaves pública e privada.
 3. **Configure o banco de dados**  
-   Renomeie o arquivo `src/main/resources/application.properties-example`para application.properties e coloque as credenciais do seu banco PostgreSQL.
-4. **Instale as dependências e execute o projeto**
+   Renomeie o arquivo `src/main/resources/application.properties-example` para `application.properties` e coloque as
+   credenciais do seu banco PostgreSQL.
+4. **Configure o RabbitMQ**  
+   Certifique-se de que o RabbitMQ está rodando e configure as credenciais no `application.properties`.
+5. **Instale as dependências e execute o projeto**
    ```bash
    ./mvnw spring-boot:run
    ```
@@ -37,5 +53,7 @@ O objetivo deste projeto é proporcionar um ambiente de aprendizado prático sob
 Sinta-se à vontade para contribuir com melhorias, correções ou sugestões.
 
 ---
+
 Projeto para fins didáticos.
+
 ```
