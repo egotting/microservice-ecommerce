@@ -1,4 +1,4 @@
-package com.github.egotting.UserService.Domain.Category.DTOs;
+package com.github.egotting.UserService.Domain.Category;
 
 import com.github.egotting.UserService.Domain.Products.DTOs.Products;
 
