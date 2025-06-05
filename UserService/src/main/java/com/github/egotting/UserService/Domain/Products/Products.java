@@ -1,16 +1,19 @@
 package com.github.egotting.UserService.Domain.Products;
 
 
+import com.github.egotting.UserService.Domain.CValueObjects.Id;
+import com.github.egotting.UserService.Domain.CValueObjects.Name;
+import com.github.egotting.UserService.Domain.CValueObjects.Quantity;
 import com.github.egotting.UserService.Domain.Category.Category;
+import com.github.egotting.UserService.Domain.Products.ValueObjects.Description;
 
 import java.math.BigDecimal;
-import java.util.UUID;
 
 public class Products {
-    private UUID id;
-    private String name;
-    private String description;
+    private Id id;
+    private Name name;
+    private Description description;
     private BigDecimal price;
-    private long quantity_stock;
+    private Quantity quantity_stock;
     private Category category;
 }

@@ -1,4 +1,4 @@
-package com.github.egotting.UserService.Domain.Payment.ValueObjects;
+package com.github.egotting.UserService.Domain.CValueObjects;
 
 public class Value {
 }

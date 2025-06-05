@@ -1,13 +1,16 @@
 package com.github.egotting.UserService.Domain.ProductsOrders;
 
-import java.math.BigDecimal;
-import java.util.UUID;
+import com.github.egotting.UserService.Domain.CValueObjects.Id;
+import com.github.egotting.UserService.Domain.CValueObjects.Quantity;
+import com.github.egotting.UserService.Domain.CValueObjects.Value;
+import com.github.egotting.UserService.Domain.Orders.Orders;
+import com.github.egotting.UserService.Domain.Products.Products;
 
 // TODO: Aplicar calisthenics types
 public class ProductsOrders {
-    private UUID id;
+    private Id id;
     private Orders orders;
     private Products products;
-    private long quantity;
-    private BigDecimal price;
+    private Quantity quantity;
+    private Value price;
 }
