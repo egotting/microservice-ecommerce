@@ -6,7 +6,6 @@ import com.github.egotting.UserService.Domain.CValueObjects.Value;
 import com.github.egotting.UserService.Domain.Orders.Orders;
 import com.github.egotting.UserService.Domain.Products.Products;
 
-// TODO: Aplicar calisthenics types
 public class ProductsOrders {
     private Id id;
     private Orders orders;
