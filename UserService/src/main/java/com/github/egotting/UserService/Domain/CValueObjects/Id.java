@@ -1,5 +1,20 @@
 package com.github.egotting.UserService.Domain.CValueObjects;
 
-// TODO: Implement the Id using UUID
+import java.util.UUID;
+
 public class Id {
+    private UUID id;
+
+    public Id() {
+        if (isValid()) {
+            throw new IllegalArgumentException("Invalid ID");
+        }
+        this.id = UUID.randomUUID();
+    }
+
+
+    public boolean isValid() {
+        return this.id == null && id.toString().isEmpty();
+    }
+
 }
