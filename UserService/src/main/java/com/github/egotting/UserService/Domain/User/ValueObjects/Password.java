@@ -23,10 +23,7 @@ public class Password {
             return false;
         }
 
-        if (!matcher.find()) {
-            return false;
-        }
-        return true;
+        return matcher.find();
     }
 
     public BCryptPasswordEncoder bcryptPasswordEncoder(String value) {
